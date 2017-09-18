@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "mocha": "^3.5.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.5.5",
+    "webpack-hot-middleware": "^2.19.1"
+  },
+  "scripts": {
+    "build": "webpack --optimize-minimize",
+    "dev": "export NODE_ENV='dev' && node start.js",
+    "start": "webpack  --optimize-minimize && node start.js",
+    "test": "mocha"
+  }
+}

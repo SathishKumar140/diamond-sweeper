@@ -1,0 +1,63 @@
+header{
+  &.container{
+    width:400px;
+    margin:0 auto;
+  }
+}
+.diamondsweeper-board{
+  display: flex;
+  flex-flow: row wrap;
+  width: 400px;
+}
+.messages{
+  padding:15px 0;
+}
+footer{
+  padding:20px 0;
+  width: 400px;
+  margin: 0 auto;
+  &button{
+    padding: 10px;
+  }
+}
+.cell {
+  flex-basis: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  border: 1px solid black;
+  box-sizing: border-box;
+
+  &.diamond {
+    background-image: url(diamond.png);
+  }
+
+  &.arrow {
+    background-image: url(arrow.png);
+  }
+  &.left {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  &.top{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  &.bottom{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+
+  &.unknown {
+    background-image: url(question.png);
+  }
+}
